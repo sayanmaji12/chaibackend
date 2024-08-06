@@ -20,7 +20,7 @@ app.get('/youtube', (req,res) => {
     res.json('<h1>youtube2</h1>')
 })
 app.get('/sam', (req,res) => {
-    res.json('<h1>SAM</h1>')
+    res.send('<h1>SAM</h1>')
 })
 app.listen(process.env.PORT, () => {
     console.log(`App listening to port ${port}`)
