@@ -9,11 +9,15 @@ app.get('/', (req, res) => {
 })
 
 app.get('/login', (req, res) => {
-    res.send("login")
+    res.send("login data")
 })
 
 app.get('/youtube', (req,res) => {
     res.send('<h1>youtube2</h1>')
+})
+
+app.get('/youtube', (req,res) => {
+    res.json('<h1>youtube2</h1>')
 })
 
 app.listen(process.env.PORT, () => {
